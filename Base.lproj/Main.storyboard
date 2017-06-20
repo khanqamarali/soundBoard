@@ -63,6 +63,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glP-xA-FmQ">
                                 <rect key="frame" x="163" y="84" width="49" height="30"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="tappedRecord:" destination="0ND-dP-MUA" eventType="touchUpInside" id="Esf-nE-NuV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVN-Tx-dpE">
                                 <rect key="frame" x="172.5" y="134" width="30" height="30"/>
@@ -101,6 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="nameTextField" destination="6Hs-Cm-DKA" id="1Ts-Gx-ZkY"/>
+                        <outlet property="playButton" destination="sVN-Tx-dpE" id="yMj-f8-SE2"/>
                         <outlet property="recordButton" destination="glP-xA-FmQ" id="3fq-m1-5Mu"/>
                     </connections>
                 </viewController>
