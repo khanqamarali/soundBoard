@@ -39,10 +39,13 @@
                     <navigationItem key="navigationItem" id="R7N-hv-d14">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="EWR-C4-xff">
                             <connections>
-                                <segue destination="0ND-dP-MUA" kind="show" id="mEP-Lq-VjS"/>
+                                <segue destination="0ND-dP-MUA" kind="show" identifier="soundsegue" id="mEP-Lq-VjS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="jNb-sL-Tyi" id="q9i-Vl-h8P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,8 +77,8 @@
                                     <action selector="tappedPlay:" destination="0ND-dP-MUA" eventType="touchUpInside" id="btH-V2-Y8e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-Lb-wOb">
-                                <rect key="frame" x="172.5" y="234" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-Lb-wOb">
+                                <rect key="frame" x="173" y="234" width="30" height="47"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="tappedAdd:" destination="0ND-dP-MUA" eventType="touchUpInside" id="GMc-Tn-Y8W"/>
@@ -106,11 +109,12 @@
                         <outlet property="nameTextField" destination="6Hs-Cm-DKA" id="1Ts-Gx-ZkY"/>
                         <outlet property="playButton" destination="sVN-Tx-dpE" id="yMj-f8-SE2"/>
                         <outlet property="recordButton" destination="glP-xA-FmQ" id="3fq-m1-5Mu"/>
+                        <outlet property="tappedAdd" destination="hgE-Lb-wOb" id="N2g-b3-2tH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nQ-Rx-cEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="-561"/>
+            <point key="canvasLocation" x="1672.8" y="-561.76911544227892"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tPz-T8-pQM">
